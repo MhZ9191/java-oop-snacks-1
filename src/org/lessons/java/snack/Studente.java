@@ -4,9 +4,8 @@ import java.util.Random;
 
 public class Studente {
     
-    String[] nomi={"Mario","Luca","Giulia","Tommaso","Francesca","Aieie"};
-    String[] cognomi={"Brazorf","Rossi","Verdi","Bianchi","Bros","Da Vinci","Ronaldo","Aranzulla"};
-
+    private String[] nomi={"Mario","Luca","Giulia","Tommaso","Francesca","Aieie"};
+    private String[] cognomi={"Brazorf","Rossi","Verdi","Bianchi","Bros","Da Vinci","Ronaldo","Aranzulla"};
     private String name;
     private String surname;
     private int age;

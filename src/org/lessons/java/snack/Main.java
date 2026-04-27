@@ -5,6 +5,8 @@ public class Main {
 
         Studente test = new Studente();
         System.out.println(test.getFullInfo());
-    
+        
+        
+
     }
 }
