@@ -1,17 +1,35 @@
 package org.lessons.java.snack;
 
+import java.util.Random;
+
 public class Studente {
     
+    String[] nomi={"Mario","Luca","Giulia","Tommaso","Francesca","Aieie"};
+    String[] cognomi={"Brazorf","Rossi","Verdi","Bianchi","Bros","Da Vinci","Ronaldo","Aranzulla"};
+
     private String name;
     private String surname;
     private int age;
 
+    public Studente(){
+        Random rnd=new Random();
+            this.name=nomi[rnd.nextInt(nomi.length)];
+            this.surname=cognomi[rnd.nextInt(cognomi.length)];
+            this.age=rnd.nextInt(99);
+        }   
+
     public Studente(String name,String surname,int age){
-        if(name.trim()!=""){
+        if(name!=null&&name.trim()!=""){
             this.name=name;
+        }else{
+            Random rnd=new Random();
+            this.name=nomi[rnd.nextInt(nomi.length)];
         }
-        if(surname.trim()!=""){
+        if(surname!=null&&surname.trim()!=""){
             this.surname=surname;
+        }else{
+            Random rnd=new Random();
+            this.surname=cognomi[rnd.nextInt(cognomi.length)];
         }
         if(age>=6){
             this.age=age;
