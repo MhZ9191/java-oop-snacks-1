@@ -35,7 +35,7 @@ public class ContoBancario {
             return null;
         }else{
             this.balance=this.balance.subtract(tmp).setScale(2,RoundingMode.DOWN);
-            System.out.printf("Operazione andata a Buon fine%nSaldo attuale : %.2f%n",this.balance);
+            System.out.printf("Operazione andata a buon fine%nSaldo attuale : %.2f%n",this.balance);
             return tmp;
         }
     }

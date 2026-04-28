@@ -18,18 +18,24 @@ public class Studente {
         }   
 
     public Studente(String name,String surname,int age){
+        
+
         if(name!=null&&name.trim()!=""){
             this.name=name;
         }else{
             Random rnd=new Random();
             this.name=nomi[rnd.nextInt(nomi.length)];
         }
+        
+
         if(surname!=null&&surname.trim()!=""){
             this.surname=surname;
         }else{
             Random rnd=new Random();
             this.surname=cognomi[rnd.nextInt(cognomi.length)];
         }
+        
+
         if(age>=6){
             this.age=age;
         }else{
@@ -43,22 +49,27 @@ public class Studente {
     public String getName(){
         return this.name;
     }
+
     public void setName(String name){
         if(name!=null&&name.trim()!=""){
             this.name=name;
         }
     }
+
     public String getSurname(){
         return this.surname;
     }
+
     public void setSurname(String surname){
         if(surname!=null&&surname.trim()!=""){
             this.surname=surname;
         }
     }
+
     public int getAge(){
         return this.age;
     }
+    
     public void setAge(int age){
         if(age>=6){
             this.age=age;
