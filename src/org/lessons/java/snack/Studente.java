@@ -14,7 +14,7 @@ public class Studente {
         Random rnd=new Random();
             this.name=nomi[rnd.nextInt(nomi.length)];
             this.surname=cognomi[rnd.nextInt(cognomi.length)];
-            this.age=rnd.nextInt(99);
+            this.age=rnd.nextInt(6,99);
         }   
 
     public Studente(String name,String surname,int age){
